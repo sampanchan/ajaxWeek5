@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Twitter</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/main.css" />
+
+	
+	</head>
+
+	<body>
+		<div class="container">
+			<form method="get"  name= "twitter_search" class="api-form" id="form">
+				<p class="message"></p>
+				<label>Tweet </label>
+				<input name="term" value="" />
+				
+				
+				<button type="submit" class="get">Search</button>
+					
+			</form>
+			<div class="tweetResults"></div>
+		</div>
+			<div class="background"></div>
+		</div>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="dist/js/twitter.js"></script>
+		<script src="dist/js/yelp.js"></script>
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+@use 'reset';
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #2e3032;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* 2. Content ================================= */
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.container > form {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	max-width: 200px;
+	color: white;
+	background-color: #0bafeb;
+	border-radius: 10px;
+	padding: 10px;
+	width: 500px;
+}
+
+.container > form > label {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.container > form > input {
+	background: #fffefe;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.container > form > button {
+	background: #223aa5;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.container p {
+	color: #5c9cf0;
+	font-size: 14px;
+}
+
+.container .tweetResults {
+	margin: 0;
+}
+
+.container .tweetResults .tweet-container {
+	text-align: center;
+	margin: 20px;
+	width: 500px;
+	background-color: #f7f7f7;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.container .tweetResults .tweet-container .tweet-item {
+	margin-bottom: 10px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.container .tweetResults .tweet-container .tweet-item h3 {
+	color: #1e3ab6;
+	font-size: 13px;
+	margin: 0;
+}
+
+.container .tweetResults .tweet-container .tweet-item > h4 {
+	color: #09133d;
+	font-size: 10px;
+	margin: 0;
+}
+
+.container .tweetResults .tweet-container .tweet-item > img {
+	border-radius: 50%;
+	padding-left: 10px;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.container .tweetResults .tweet-container .tweet-item p {
+	margin: 0;
+}
+
+.container .tweetResults .tweet-container .tweet-item .date-item {
+	color: #292828;
+	font-size: 14px;
+}
+
+.container .tweetResults .tweet-container .tweet-item a {
+	color: #6e6b6b;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */

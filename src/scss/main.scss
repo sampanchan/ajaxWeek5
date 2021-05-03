@@ -1,0 +1,139 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+
+@use 'reset';
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(46, 48, 50);
+	font-family: 'Roboto', sans-serif;
+}
+
+/* 2. Content ================================= */
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	
+	>form{
+		display: flex;
+		flex-direction: column;
+		max-width: 200px;
+		color: white;
+		background-color: rgb(11, 175, 235);
+		border-radius: 10px;
+		padding: 10px;
+		width: 500px;
+		>label{
+			font-size: 2em;
+			font-weight: 500;
+		}
+		>input{
+			background: rgb(255, 254, 254);
+			border: none;
+			border-radius:10px ;
+			padding: 20px;
+			margin-bottom: 10px;
+		}
+		>button{
+			background: rgb(34, 58, 165);
+			border: none;
+			border-radius:10px ;
+			padding: 5px;
+			margin-bottom: 10px;
+			color: white;
+		}
+	}
+
+	p{
+		color: rgb(92, 156, 240);
+		font-size: 14px;
+	}
+
+	.tweetResults{
+		margin: 0;
+		.tweet-container{
+			text-align: center;
+			margin: 20px;
+			width: 500px;
+			background-color: rgb(247, 247, 247);
+			padding: 5px;
+			border-radius: 10px;
+			
+
+			.tweet-item{
+				
+				margin-bottom:10px ;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				h3{
+					color:rgb(30, 58, 182);
+					font-size: 13px;
+					margin: 0;
+					
+				}
+				>h4{
+					color:rgb(9, 19, 61);
+					font-size: 10px;
+					margin: 0;
+				}
+				>img{
+					border-radius: 50%;
+					padding-left: 10px;
+					width: auto;
+					height:auto;
+					margin: 0;		
+				}
+				p{
+					margin: 0;
+				}
+				.date-item{
+					color: rgb(41, 40, 40);
+					font-size: 14px;
+				}
+
+				a {
+					color:rgb(110, 107, 107);
+					text-decoration: none;
+					font-size: 12px;
+				}
+
+				
+				
+		
+			}
+		}
+	}
+}
