@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["console","log","TwitterApi"],"mappings":";;AAAAA,OAAO,CAACC,GAAR,CAAY,IAAZ;AAEA,IAAIC,UAAJ","sourcesContent":["console.log('hi')\n\nnew TwitterApi()"],"file":"main.js"}
+{"version":3,"sources":["main.js"],"names":["console","log","GoogleMapApi"],"mappings":";;AAAAA,OAAO,CAACC,GAAR,CAAY,IAAZ;AAEA,IAAIC,YAAJ","sourcesContent":["console.log('hi')\n\nnew GoogleMapApi()"],"file":"main.js"}

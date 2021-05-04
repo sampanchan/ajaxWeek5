@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<title>Twitter</title>
+		<title>GoogleMap</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,23 +15,28 @@
 
 	<body>
 		<div class="container">
-			<form method="get"  name= "twitter_search" class="api-form" id="form">
+			<form method="get"  name= "place_search" class="api-form" id="form">
 				<p class="message"></p>
-				<label>Tweet </label>
-				<input name="term" value="" />
+				<label>Map Google</label>
+				<input name="place" value="" />
 				
 				
 				<button type="submit" class="get">Search</button>
 					
 			</form>
-			<div class="tweetResults"></div>
+			<div id="map"></div>
+		
 		</div>
 			<div class="background"></div>
 		</div>
-
+		<script src="dist/js/maps.js"></script>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN8YgsGRhmpj0vSQlLl5EViZa3MGbrjr8&callback=gMap.ready&libraries=places&v=weekly"
+		async
+	  ></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script src="dist/js/twitter.js"></script>
-		<script src="dist/js/yelp.js"></script>
+		
+		<!-- <script src="dist/js/yelp.js"></script> -->
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
